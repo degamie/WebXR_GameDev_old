@@ -1,14 +1,17 @@
-///WID(17/2/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
+///WID(23/2/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+State state=new  State();
+getState=(State state)=>{return state;}//Fethcing State in App
 App app=new App();
+Configuartation config=new Configuartation();
 existsByApp=(App app)=>{if(app.length!=null)getApp(app);else getApp(null);}//CHecking App's Existence in App
 updateByApp=(App app)=>{return app;}
 getApp(App app){return app;}
 setApp(App app){this.app=app;}//Binding App in WeBXR
-updateByApp(App app){if(app!=null)getApp(app);else getApp(null);}//Updating App's Existence in WEBXR
+updateByApp(App app){if(app!=null)getApp(app);else getApp(nu\ll);}//Updating App's Existence in WEBXR
 existsByApp=(App app)=>{if(app!=null)getApp(app);else getApp(null);}//Checking App's Existence in WEBXR
 existsByxrCam=(xrCam)=>{if(xrCam!=null)getxrCam(xrCam);else getxrCam(null);}//Chekcing XRCam's Existence in app
 App(player,renderer){
