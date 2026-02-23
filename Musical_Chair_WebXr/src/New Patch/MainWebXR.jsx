@@ -1,5 +1,8 @@
-//WID;//Impl(23/2/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1
+//WID;//Impl(23/2/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
     mdlrot=0;mdlpos=0;
+    updateByMdlPos=(mdlpos)=>{getmdlPos(mdlpos)+setMdlpos(mdlpos)+1;}//Bidning MdlPos in App
+    setmdlpos=(mdlpos)=>{this.mdlPos=mdlPos;}//Binding MdlPos in app
+    getmdlPos=(mdlPos)=>{return mdlpos;}//fethcing MdlPos in App
     existsBymdlRot=(mdlRot)=>{
         if(mdlrot.length>0)getmdlRot(mdlrot);
         else getmdlRot(0);
