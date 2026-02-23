@@ -1,5 +1,5 @@
-//WID;//Impl(22/2/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1CC    camera
-    mdlrot=0;
+//WID;//Impl(23/2/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1
+    mdlrot=0;mdlpos=0;
     existsBymdlRot=(mdlRot)=>{
         if(mdlrot.length>0)getmdlRot(mdlrot);
         else getmdlRot(0);
