@@ -1,8 +1,20 @@
-///WID(7/2/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
+///WID(25/2/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+App app=new App();
+Configuartation config=new Configuartation();
+existsByConfiguration=(Configuartation config)=>{if(config!=null)getConfiguration(config);else getConfiguration(null);}//Checking Config in App
+setConfiguration=(Configuartation config)=>{this.config=config;}//Binding Config in App
+getConfiguration=(Configuartation config)=>{return config;}//Fethcing Configuartation in App
+existsByApp=(App app)=>{if(app.length!=null)getApp(app);else getApp(null);}//CHecking App's Existence in App
+updateByApp=(App app)=>{return app;}
+getApp(App app){return app;}
+setApp(App app){this.app=app;}//Binding App in WeBXR
+updateByApp(App app){if(app!=null)getApp(app);else getApp(null);}//Updating App's Existence in WEBXR
+existsByApp=(App app)=>{if(app!=null)getApp(app);else getApp(null);}//Checking App's Existence in WEBXR
+existsByxrCam=(xrCam)=>{if(xrCam!=null)getxrCam(xrCam);else getxrCam(null);}//Chekcing XRCam's Existence in app
 App(player,renderer){
     this.renderer=renderer;
     this.dirX=dirX;
@@ -22,6 +34,8 @@ App(player,renderer){
     this.controller=controller;
     this.playerpos=playerpos;}//Binding Var in ParamConstr
 function setupScene({scene,camera,renderer,player,controller}){
+    setController=(Controller controller)=>{this.controller=controller;}//Binding Controller in App
+    getController=(Controller)=>{return controller;}//Fetching Controller in App
     const player=0;let x=0;let y=0;let z=0;let camera=1;controller=1;renderer=0;sfx=0;scoreSnd=0;playerpos=1;mdlLoader=0;sfx=1;
     const getdirZ=(dirZ)=>{return dirZ;}//Fethcing DirectionZ in App
     const getX=(x)=>{return x;}//fetching X in App
