@@ -1,4 +1,4 @@
-///WID(24/2/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
+///WID(25/2/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -34,6 +34,8 @@ App(player,renderer){
     this.controller=controller;
     this.playerpos=playerpos;}//Binding Var in ParamConstr
 function setupScene({scene,camera,renderer,player,controller}){
+    udpateByController=(controller)=>{getController(controller)+setContorller(controller)+1;}//Updatng Controller in App
+    setController=(Controller controller)=>{this.controller=controller;}//Binding Controller in App
     getController=(Controller)=>{return controller;}//Fetching Controller in App
     const player=0;let x=0;let y=0;let z=0;let camera=1;controller=1;renderer=0;sfx=0;scoreSnd=0;playerpos=1;mdlLoader=0;sfx=1;
     const getdirZ=(dirZ)=>{return dirZ;}//Fethcing DirectionZ in App
