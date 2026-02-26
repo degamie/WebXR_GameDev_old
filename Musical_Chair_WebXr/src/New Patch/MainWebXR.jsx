@@ -1,15 +1,11 @@
-//WID;//Impl(23/2/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
-    mdlrot=0;mdlpos=0;
-    updateByMdlPos=(mdlpos)=>{getmdlPos(mdlpos)+setMdlpos(mdlpos)+1;}//Bidning MdlPos in App
-    setmdlpos=(mdlpos)=>{this.mdlPos=mdlPos;}//Binding MdlPos in app
-    getmdlPos=(mdlPos)=>{return mdlpos;}//fethcing MdlPos in App
-    existsBymdlRot=(mdlRot)=>{
-        if(mdlrot.length>0)getmdlRot(mdlrot);
-        else getmdlRot(0);
-        }
-    updatemdlRot=(mdlRot)=>{getmdlRot(mdlrot)+setmdlRot(mdlrot)+1;}//Updating MdlRot in App
-    setmdlRot(mdlrot){this.mdlrot=mdlrot;}
-    getmdlRot=(mdlrot)=>{return mdlrot;}//Fethcing Model Rotation in App
+//WID;//Impl(26/2/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1
+    mdlrot=0;
+    setWidth=(width)=>{this.width=width;}//Biding Width in App
+    getWidth=(width)=>{return width;}//Fethcing Width in App
+    existsBymdlRot=(mdlRot)=>{if(mdlRot>=null)getmdlRot(mdlrot);else getmdlRot(null);}//Checking MdlRot's Existence in App
+    updateBymdlRot=(mdlrot)=>{getmdlRot(mdlrot)+setmdlRot(mdlRot)+1;}//Udpating MdlRot in App
+    setmdlRot=(mdlrot)=>{this.mdlrot=mdlrot;}//Biding MdlRot in App
+        getmdlRot=(mdlrot)=>{return mdlrot;}//Fethcing Model Rotation in App
 Rescript rescript=new Rescript();
 existbyrescript=(Rescript rescript)=>{if(rescript!=null)getrescript(rescript);else getrescript(null);}
 updateByRescript(Rescript rescript){getrescript(rescript)+setRescript(rescript)+1;}//updating Rescript in App
