@@ -1,9 +1,12 @@
-///WID(25/2/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
-import { useState } from 'react'
+///WID(26/2/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
+import { useState } from 'react'controller
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 App app=new App();
+MainWebXR mainwebxr;
+mainwebxr.setmdlRot(mdlrot);
+mainwebxr.getmdlRot(mdlrot);
 Configuartation config=new Configuartation();
 existsByConfiguration=(Configuartation config)=>{if(config!=null)getConfiguration(config);else getConfiguration(null);}//Checking Config in App
 setConfiguration=(Configuartation config)=>{this.config=config;}//Binding Config in App
