@@ -1,6 +1,7 @@
-//WID;//Impl(27/2/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
+//WID;//Impl(27/2/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
 
         Texture mdlText=null;mdlrot=0;
+        getmdlText=(mdlText)=>{return mdlText;}//Fetching MdlText in App
         setmdlText=(Texture mdlText)=>{this.mdlText=mdlText;}//Binding mdlText in App
 
     setWidth=(width)=>{this.width=width;}//Biding Width in App
