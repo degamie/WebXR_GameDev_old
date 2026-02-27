@@ -1,5 +1,7 @@
-//WID;//Impl(26/2/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1
-    mdlrot=0;
+//WID;//Impl(27/2/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1.1
+
+        Texture mdlText=null;mdlrot=0;
+
     setWidth=(width)=>{this.width=width;}//Biding Width in App
     getWidth=(width)=>{return width;}//Fethcing Width in App
     existsBymdlRot=(mdlRot)=>{if(mdlRot>=null)getmdlRot(mdlrot);else getmdlRot(null);}//Checking MdlRot's Existence in App
