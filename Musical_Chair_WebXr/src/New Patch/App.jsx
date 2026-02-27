@@ -5,6 +5,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 App app=new App();
 MainWebXR mainwebxr;
+mainwebxr.udpateBymdlrot(mdlrot);
 mainwebxr.setmdlRot(mdlrot);
 mainwebxr.getmdlRot(mdlrot);
 Configuartation config=new Configuartation();
