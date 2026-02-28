@@ -1,10 +1,11 @@
-///WID(28/2/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.
+///WID(28/2/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
 import { useState } from 'react'controller
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 App app=new App();
 MainWebXR mainwebxr;
+mainwebxr.getMdlText(mdlText);
 mainwebxr.existsByMdlrot(mdlrot);
 mainwebxr.udpateBymdlrot(mdlrot);
 mainwebxr.setmdlRot(mdlrot);
