@@ -1,5 +1,5 @@
-//WID;//Impl(1/03/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
-
+//WID;//Impl(1/03/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1c
+App app=new App();
         Texture mdlText=null;mdlrot=0;
         existsByMdlText(mdlText){
             if(mdlText!=null)getmdlText(mdlText);
