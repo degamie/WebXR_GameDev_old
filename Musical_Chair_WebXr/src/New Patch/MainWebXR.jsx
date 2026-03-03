@@ -1,7 +1,9 @@
-//WID;//Impl(3/03/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
+//WID;//Impl(3/03/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C 
 App app=new App(); Camera  cam=new Camera();
+app.existsByxrCam(camera);
 app.setxrCam(cam);
 app.getxrCam(cam);//fethcing XRCamera In App
+app.updateByXRCamera(camera);//updating Camera in App
         Texture mdlText=null;mdlrot=0;
         existsByMdlText(mdlText){
             if(mdlText!=null)getmdlText(mdlText);
