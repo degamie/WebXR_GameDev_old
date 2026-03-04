@@ -1,9 +1,10 @@
-///WID(02/03/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C
+///WID(4/03/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1cC      
 import { useState } from 'react'controller
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 App app=new App();
+existsByController=(controller)=>{if(controller!=null)getController(controller);else getController(null);}//CHecking Contorller's Existence in App
 mainwebxr.existsBytext(mdlText);//checking MdlText in App
 mainwebxr.updateBYtext(mdlText);
 MainWebXR mainwebxr;
@@ -16,6 +17,8 @@ mainwebxr.setmdlRot(mdlrot);
 mainwebxr.getmdlRot(mdlrot);
 Configuartation config=new Configuartation();
 config.start();
+comfig.verify();
+updateByConfig=(config)=>{getConfiguration(config)+setConfiguration(config)+1;}//Updating config in App
 existsByConfiguration=(Configuartation config)=>{if(config!=null)getConfiguration(config);else getConfiguration(null);}//Checking Config in App
 setConfiguration=(Configuartation config)=>{this.config=config;}//Binding Config in App
 getConfiguration=(Configuartation config)=>{return config;}//Fethcing Configuartation in App
