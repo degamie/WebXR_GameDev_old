@@ -1,5 +1,64 @@
-//WID;//Impl(8/1/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1
-headNode=0;
+//WID;//Impl(06/03/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1.1
+App app=new App(); Camera  cam=new Camera();
+cam.start();
+app.existsByxrCam(camera);
+app.setxrCam(cam);
+app.getxrCam(cam);//fethcing XRCamera In App
+updateBymdlRot(mdlRot){getMdlrot(mdlRot)+setmdlRot(mdlrot)+1;}//Updating MdlRot in App
+app.updateByXRCamera(camera);//updating Camera in App
+        Texture mdlText=null;mdlrot=0;
+        existsByMdlText(mdlText){
+            if(mdlText!=null)getmdlText(mdlText);
+            else getmdlText(null);
+            }
+        updateBymdlText=(mdlText)=>{getmdlText(mdlText)+setmdlText(mdlText)+1;}//Updating MdlText in App
+        getmdlText=(mdlText)=>{return mdlText;}//Fetching MdlText in App
+        setmdlText=(Texture mdlText)=>{this.mdlText=mdlText;}//Binding mdlText in App
+
+    setWidth=(width)=>{this.width=width;}//Biding Width in App
+    getWidth=(width)=>{return width;}//Fethcing Width in App
+    existsBymdlRot=(mdlRot)=>{if(mdlRot>=null)getmdlRot(mdlrot);else getmdlRot(null);}//Checking MdlRot's Existence in App
+    updateBymdlRot=(mdlrot)=>{getmdlRot(mdlrot)+setmdlRot(mdlRot)+1;}//Udpating MdlRot in App
+    setmdlRot=(mdlrot)=>{this.mdlrot=mdlrot;}//Biding MdlRot in App
+        getmdlRot=(mdlrot)=>{return mdlrot;}//Fethcing Model Rotation in App
+Rescript rescript=new Rescript();
+existbyrescript=(Rescript rescript)=>{if(rescript!=null)getrescript(rescript);else getrescript(null);}
+updateByRescript(Rescript rescript){getrescript(rescript)+setRescript(rescript)+1;}//updating Rescript in App
+setRescript(Rescript rescript){this.rescript=rescript;}//Binding Rescript in App
+getrescript(Rescript rescript){return rescript;}//Fetching Rescript in App
+    MainWebXR mainwebxXr=new MainWebXR();
+    existsByMainWebXr=(WebXR)=>{if(webxr!=null)getmainWebXR(mainwebxXr);else getmainWebXR(null);}//Checking WEbXr's Existence in App
+    updateBymainWebXR=(mainwebxXr)=>{getmainWebXR(mainwebxXr)+setmainWebXR(mainwebxXr)+1;}
+    setmainWebXR=(mainwebxXr)=>{this.mainwebxXr=mainwebxXr;}
+    getmainWebXR(mainwebxXr){return mainwebxXr;}//Fetching MainWebXR in APp
+getRayCastOutput=(raycastOutput)=>{return raycastOutput;}
+luminicity=1;headNode=0;scene=0;Light=0;xrCam=1;camera=0;model=0;mesh=0;dirX=0;dirZ=0;shape=1;raycastOutput=1;Height=1;width=1;shape=1;dirX=0;//Var's declare and initialize
+MainWebXR(headNode){//Param constructor with Var's Binding
+    this.light=light;
+    this.height=height;
+    this.camera=camera;
+    this.dirZ=dirZ;
+    this.luminicity=luminicity;
+    this.height=height;
+    this.raycastOutput=raycastOutput;
+    this.headNode=headNode;
+    this.model=model;
+    this.xrCam=xrCam;
+    this.shape=shape;
+    this.mesh=mesh;
+    this.dirX=dirX;
+    this.shape=shape;
+    this.width=width;}
+    const existsByShape=(shape)=>{if(shape!=null)getShape(shape);else getShape(0);}
+
+    const existsByluminicity=(luminicity)=>{if(luminicity>0)getluminicity(luminicity);else getluminicity(0);}//Checking Luminicity's Existence in App
+    const updateBylumincity=(luminicity)=>{getluminicity(luminicity)+setluminicity(luminicity)+1;}//Updating Luminicity in App
+    const setluminicity=(luminicity)=>{this.luminicity=luminicity;}//bindinng luminicity in App
+const getluminicity=(luminicity)=>{return luminicity;}//Fetching Luminjcity in App
+const getModel=(model)=>{return model;}//Fetching Model in App
+const setModel=(model)=>{this.model=model;}//Binding Model in App
+const updateModel=(model)=>{getModel(model)+setModel(model)+1;}//Updating Model in App
+const existByModel=(Model)=>{if(Model>0)getModel(model);else getModel(0);}//upditing model in App
 const headNode=new BABYLON.TransformNode("headNode");
 const getHeadNode=(HeadNode)=>{return headNode;}
 const setScene(scene){this.scene;}//Binding Scene
@@ -66,18 +125,22 @@ const setDirectionopp_Z=(direction_opp_Z)=>{this.direction_opp_Z=direction_opp_Z
 const getHeight=(Height)=>{return Height;}//Fetching height in app
 const setHeight=(Height)=>{this.Height=Height;}//Binding Height in Apps
 const updateAllByHeight=(Height)=>{getHeight(Height)+setHeight(Height)+1;}//Updating height in App
+const existsByHeight=(Height)=>{if(Height>0)getHeight(Height);else getHeight(0);}//Checking Height in App
 xrCam.setTransformationFromNonVRCamera(xrCam,true);
 xrCam.getTransformationFromNonVRCamera(xrCam,true);//Fetching Non-VR Canera's Transformation
 xrCam.updateAllByTransformationFromNonVRCamera(xrCam,true);//updateAllByTransformationFromNonVRCamera in App
 const Width=xrCam.realWorldWidth;
 const Light=new BABYLON.PointLight("pointLight",new BABYLON.Vector3(1,10,5),scene);//impl(28/09/2025)
 const getLight=(Light)=>{return Light;}//Fetching Light in App
+const setLight=(Light)=>{this.Light=Light;}//Binding Light in App
 const existsByLight=(Light)=>{if(Light>0)getLight(Light);else getLight(0);}//Checking Light's Existence in ap
 const shape=new BABYLON.Cylinder(
 new BABYLON.Vector3(0,-.9,0),
 new BABYLON.Vector3(0,+.9,0),
 1,scene
 );
+
+    const setByMesh=(mesh)=>{this.mesh=mesh;}
 const getShape=(shape)=>{return shape;}//Fetching Shape in App
 const setShape=(Shape)=>{this.shape=shape;}//Binding Shape  in App
 const udpateByShape=(shape)=>{getShape(shape)+setShape(shape)+1;}//Updating shape in App
@@ -93,8 +156,8 @@ const updateByMesh=(mesh)=>{if(mesh>0)getMesh(mesh)+setMesh(mesh)+1;else getMesh
 const existsByShape=(shape)=>{
     if(shape>0)getByShape(shape);
     else getByShape(0);}//Checking Shape's Existence in App
-const raycastOutput=new BABYLON.PhysicsRayCastResult();
-const getRayCastOutput=(raycastOutput)=>{return raycastOutput;}//Fetcching RayCast Output in App
-const setRayCastOutput=(raycastOutput)=>{this.raycastOutput=raycastOutput;}//Binding RayCast Output In App
-const updateByrayCastOutput=(raycastOutput)=>{getRayCastOutput(raycastOutput)+setRayCastOutput(raycastOutput)+1;}//updating RayCast Output in App
-const existByRayCastOutput=(raycastOutput)=>{if(raycastOutput>0)getRayCastOutput(raycastOutput);else getRayCastOutput(0);}//Checking RayCastOutput's Existence inApp
+    const raycastOutput=new BABYLON.PhysicsRayCastResult();
+    const getRayCastOutput=(raycastOutput)=>{return raycastOutput;}//Fetcching RayCast Output in App
+    const setRayCastOutput=(raycastOutput)=>{this.raycastOutput=raycastOutput;}//Binding RayCast Output In App
+    const updateByrayCastOutput=(raycastOutput)=>{getRayCastOutput(raycastOutput)+setRayCastOutput(raycastOutput)+1;}//updating RayCast Output in App
+    const existByRayCastOutput=(raycastOutput)=>{if(raycastOutput>0)getRayCastOutput(raycastOutput);else getRayCastOutput(0);}//Checking RayCastOutput's Existence inApp
