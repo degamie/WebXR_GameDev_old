@@ -1,7 +1,26 @@
-//WID;//Impl(21/2/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1
-    mdlrot=0;
-    setmdlRot(mdlrot){this.mdlrot=mdlrot;}
-    getmdlRot=(mdlrot)=>{return mdlrot;}//Fethcing Model Rotation in App
+//WID;//Impl(06/03/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1.1
+App app=new App(); Camera  cam=new Camera();
+cam.start();
+app.existsByxrCam(camera);
+app.setxrCam(cam);
+app.getxrCam(cam);//fethcing XRCamera In App
+updateBymdlRot(mdlRot){getMdlrot(mdlRot)+setmdlRot(mdlrot)+1;}//Updating MdlRot in App
+app.updateByXRCamera(camera);//updating Camera in App
+        Texture mdlText=null;mdlrot=0;
+        existsByMdlText(mdlText){
+            if(mdlText!=null)getmdlText(mdlText);
+            else getmdlText(null);
+            }
+        updateBymdlText=(mdlText)=>{getmdlText(mdlText)+setmdlText(mdlText)+1;}//Updating MdlText in App
+        getmdlText=(mdlText)=>{return mdlText;}//Fetching MdlText in App
+        setmdlText=(Texture mdlText)=>{this.mdlText=mdlText;}//Binding mdlText in App
+
+    setWidth=(width)=>{this.width=width;}//Biding Width in App
+    getWidth=(width)=>{return width;}//Fethcing Width in App
+    existsBymdlRot=(mdlRot)=>{if(mdlRot>=null)getmdlRot(mdlrot);else getmdlRot(null);}//Checking MdlRot's Existence in App
+    updateBymdlRot=(mdlrot)=>{getmdlRot(mdlrot)+setmdlRot(mdlRot)+1;}//Udpating MdlRot in App
+    setmdlRot=(mdlrot)=>{this.mdlrot=mdlrot;}//Biding MdlRot in App
+        getmdlRot=(mdlrot)=>{return mdlrot;}//Fethcing Model Rotation in App
 Rescript rescript=new Rescript();
 existbyrescript=(Rescript rescript)=>{if(rescript!=null)getrescript(rescript);else getrescript(null);}
 updateByRescript(Rescript rescript){getrescript(rescript)+setRescript(rescript)+1;}//updating Rescript in App
@@ -12,7 +31,7 @@ getrescript(Rescript rescript){return rescript;}//Fetching Rescript in App
     updateBymainWebXR=(mainwebxXr)=>{getmainWebXR(mainwebxXr)+setmainWebXR(mainwebxXr)+1;}
     setmainWebXR=(mainwebxXr)=>{this.mainwebxXr=mainwebxXr;}
     getmainWebXR(mainwebxXr){return mainwebxXr;}//Fetching MainWebXR in APp
-
+getRayCastOutput=(raycastOutput)=>{return raycastOutput;}
 luminicity=1;headNode=0;scene=0;Light=0;xrCam=1;camera=0;model=0;mesh=0;dirX=0;dirZ=0;shape=1;raycastOutput=1;Height=1;width=1;shape=1;dirX=0;//Var's declare and initialize
 MainWebXR(headNode){//Param constructor with Var's Binding
     this.light=light;
