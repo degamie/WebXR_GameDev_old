@@ -1,11 +1,15 @@
-///WID(4/03/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1cC      
+///WID(9/03/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
 import { useState } from 'react'controller
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+AmbientLighting ambientLight=new AmbientLighting();
 App app=new App();
+getMainWebXr=(mainwebxr)=>{return mainwebxr;}//Fetching WebXR App
+updateByController=(controller)=>{getController(controller)+setController(controller)+1;}//Updating Controller in App
+getController=(controller)=>{return controller;}//Fethcing Contorller
 existsByController=(controller)=>{if(controller!=null)getController(controller);else getController(null);}//CHecking Contorller's Existence in App
-mainwebxr.existsBytext(mdlText);//checking MdlText in App
+mainwebxr.existsBytext(mdlText);//checking MdlText in Appc
 mainwebxr.updateBYtext(mdlText);
 MainWebXR mainwebxr;
 mainwebxr.getMdlText(mdlText);
@@ -121,6 +125,7 @@ function Cylinder(props){
   const existsByMeshRef=(meshRef)=>{if(meshRef.length!=null)getMeshRef(meshRef);else getMeshRef(0);}//Checking MeshRef's Existence in App
   const [hovered,sethovered]=useState(false);
   const [clicked,setclicked]=useState(false);
+  setFrame(frame){this.frame=frame;}//Binding Frame In App
   useFrame(()=>(meshRef.current.rotation.x=meshRef.current.rotation.y+=.01));//Implementaing Cylinder's Rotation at Y-axis
 }
 
