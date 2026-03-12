@@ -1,8 +1,9 @@
-///WID(12/03/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/,1.1
+///WID(12/03/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/,1.1.1
 import { useState } from 'react'controller
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+existsByAmbientLighting=(ambientLight)=>{if(ambientLight!=null)getAmbientLighting(ambientLight);else getAmbientLighting(null);}//Chekcing AmbientLighting's Existence iN App
 updateByAmbientLighting=(AmbientLighting ambientLight)=>{getAmbientLighting(ambientLight)+setAmbientLighting(ambientLight)+1;}//Updating AmbientLighting in App
 updateByWebXr=(MainWebXR)=>{getMainWebXr(mainwebxr)+setMainWebXr(mainwebxr)+1;}//Updating WebXRApp
 setMainWebXr=(mainwebxr)=>{this.mainwebxr=mainwebxr}
