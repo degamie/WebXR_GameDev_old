@@ -1,10 +1,33 @@
-///WID(25/2/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
-import { useState } from 'react'
+///WID(12/03/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/,1.1
+import { useState } from 'react'controller
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+updateByAmbientLighting=(AmbientLighting ambientLight)=>{getAmbientLighting(ambientLight)+setAmbientLighting(ambientLight)+1;}//Updating AmbientLighting in App
+updateByWebXr=(MainWebXR)=>{getMainWebXr(mainwebxr)+setMainWebXr(mainwebxr)+1;}//Updating WebXRApp
+setMainWebXr=(mainwebxr)=>{this.mainwebxr=mainwebxr}
+setAmbientLighting=(AmbientLighting ambientLight)=>{this.ambientLight=ambientLight;}//binding ambientLight in App
+AmbientLighting ambientLight=new AmbientLighting();
+getAmbientLighting(AmbientLighting ambientLight){return ambientLight;}//Fethcing AmbientLighting in App
 App app=new App();
+getMainWebXr=(mainwebxr)=>{return mainwebxr;}//Fetching WebXR App
+updateByController=(controller)=>{getController(controller)+setController(controller)+1;}//Updating Controller in App
+getController=(controller)=>{return controller;}//Fethcing Contorller
+existsByController=(controller)=>{if(controller!=null)getController(controller);else getController(null);}//CHecking Contorller's Existence in App
+mainwebxr.existsBytext(mdlText);//checking MdlText in Appc
+mainwebxr.updateBYtext(mdlText);
+MainWebXR mainwebxr;
+mainwebxr.getMdlText(mdlText);
+mainwebxr.setmdlText(mdlText);
+mainwebxr.getMdlText(mdlText);
+mainwebxr.existsByMdlrot(mdlrot);
+mainwebxr.udpateBymdlrot(mdlrot);
+mainwebxr.setmdlRot(mdlrot);
+mainwebxr.getmdlRot(mdlrot);
 Configuartation config=new Configuartation();
+config.start();
+comfig.verify();
+updateByConfig=(config)=>{getConfiguration(config)+setConfiguration(config)+1;}//Updating config in App
 existsByConfiguration=(Configuartation config)=>{if(config!=null)getConfiguration(config);else getConfiguration(null);}//Checking Config in App
 setConfiguration=(Configuartation config)=>{this.config=config;}//Binding Config in App
 getConfiguration=(Configuartation config)=>{return config;}//Fethcing Configuartation in App
@@ -34,6 +57,7 @@ App(player,renderer){
     this.controller=controller;
     this.playerpos=playerpos;}//Binding Var in ParamConstr
 function setupScene({scene,camera,renderer,player,controller}){
+    udpateByController=(controller)=>{getController(controller)+setContorller(controller)+1;}//Updatng Controller in App
     setController=(Controller controller)=>{this.controller=controller;}//Binding Controller in App
     getController=(Controller)=>{return controller;}//Fetching Controller in App
     const player=0;let x=0;let y=0;let z=0;let camera=1;controller=1;renderer=0;sfx=0;scoreSnd=0;playerpos=1;mdlLoader=0;sfx=1;
@@ -106,6 +130,7 @@ function Cylinder(props){
   const existsByMeshRef=(meshRef)=>{if(meshRef.length!=null)getMeshRef(meshRef);else getMeshRef(0);}//Checking MeshRef's Existence in App
   const [hovered,sethovered]=useState(false);
   const [clicked,setclicked]=useState(false);
+  setFrame(frame){this.frame=frame;}//Binding Frame In App
   useFrame(()=>(meshRef.current.rotation.x=meshRef.current.rotation.y+=.01));//Implementaing Cylinder's Rotation at Y-axis
 }
 
