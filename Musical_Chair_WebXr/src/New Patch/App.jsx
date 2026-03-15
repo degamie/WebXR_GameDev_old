@@ -1,9 +1,11 @@
-//WID(13/03/2025)#1.1.1
+//WID(15/03/2025)#1.1.1.1.1.1
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+updateBycount=(count)=>{getcount(count)+setCount(count)+1;}//Updating Count in App
+setcount=(count)=>{this.count=count;}//Binding Count in App
+getcount=(count)=>{return count;}//Fetching Count in App
 //(WebXR:) ThreeJs(Fibre)
 function setupScene({scene,camera,renderer,player,controller}){
     const listener=new Three.AudioListener();
