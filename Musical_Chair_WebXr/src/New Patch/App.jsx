@@ -1,13 +1,15 @@
-//WID(15/03/2025)#1.1.1.1.1.1
-import { useState } from 'react'
+//WID(17/03/2025)#1.1.1.1.1.1.1.1.1c
+    import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+existsBycount=(count)=>{if(count!=0)getcount(Count);else getcount(null);}//Checking Player's Coutn in App
 updateBycount=(count)=>{getcount(count)+setCount(count)+1;}//Updating Count in App
 setcount=(count)=>{this.count=count;}//Binding Count in App
 getcount=(count)=>{return count;}//Fetching Count in App
 //(WebXR:) ThreeJs(Fibre)
 function setupScene({scene,camera,renderer,player,controller}){
+    const existsByListener=(listener)=>{if(listener!=null)getListener(listener);else getListener(null);}//Checking Listener in App
     const listener=new Three.AudioListener();
     const setlistener=(listener)=>{this.listener=listener;}
     const getListener=(listener)=>{return listener;}
@@ -25,6 +27,7 @@ function setupScene({scene,camera,renderer,player,controller}){
     const updateAllByScoreSnd=(ScoreSnd)=>{getScoreSnd(ScoreBoardSound)+setScoreSnd(ScoreBoardSound)+1};//Updating ScoreSnd in Server
 }
 function Cylinder(props){
+    const existsBymeshRef=(meshRef)=>{if(meshRef!=null)getMeshRef(meshRef);else getMeshRef(null);}//Checking MeshRef's Existence in App
   meshRef=useRef();
 
   const setMeshRef=(meshRef)=>{this.meshRef=meshRef;}//Binding MeshRef
