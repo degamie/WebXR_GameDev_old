@@ -1,4 +1,8 @@
-//WID;//Impl(15/03/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1.1.1.1.1.1/1.1.1.1.1.1.1
+//WID;//Impl(18/03/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1.1.1.1 
+XRCam xrCam=new XRCam();
+setApp=(App app)=>{this.app=app;}//binding App
+getApp=(App app)=><{return app;}//Fetching App
+existsBySfx=(Sfx)=>{if(sfx!=null)getSfx(sfx);else getSfx(null);}//Checking Sfx's Existence in App
 updateBySfx=(sfx)=>{getSfx(sfx)+setSfx(sfx)+1;}//Updating Sfx in App
 setSfx=(sfx)=>{this.sfx=sfx;}//Binding sfx in App
 getSfx=(sfx)=>{return sfx;}//fetching Sfx in App
