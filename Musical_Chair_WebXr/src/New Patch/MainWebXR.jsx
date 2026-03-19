@@ -1,4 +1,5 @@
-//WID;//Impl(19/03/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1
+//WID;//Impl(19/03/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1
+existsBymdlrot=(mdlRot)=>{if(mdlRot!=null)getmdlrot(mdlRot);else getmdlrot(null);}//Chekcing MdlRot's Existence in App
 updateBymdlrot=(mdlRot)=>{getmdlrot(mdlRot)+setMdlrot(mdlRot)+1;}//Updating Mdlrot in App
 getmdlrot=(mdlRot)=>{return mdlRot;}//Fethcing mdlROt in App
 setMdlrot=(mdlRot)=>{this.mdlRot=mdlRot;}//Binding MdlRot in App
