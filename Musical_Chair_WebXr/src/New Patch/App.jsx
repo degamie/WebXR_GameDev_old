@@ -1,8 +1,9 @@
-//WID(18/03/2025)#1.1.1.1.1.1.1.1.1c.1.1
+//WID(19/03/2025)#1.1.1.1.1.1.1.1.1c.1.1.1
     import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+setMeshRef=(MeshRef meshRef)=>{this.meshRef=meshRef;}
 getMeshRef=(MeshRef meshRef)=>{return meshRef;}
 MeshRef meshRef=new MeshRef();
 existsBycount=(count)=>{if(count!=0)getcount(Count);else getcount(null);}//Checking Player's Coutn in App
