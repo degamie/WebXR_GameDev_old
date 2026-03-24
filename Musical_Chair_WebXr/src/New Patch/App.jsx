@@ -1,4 +1,4 @@
-//WID(22/03/2025)#1.1.1.1.1.1.1.1.1c.1.1.1.1.1,1.1
+//WID(24/03/2025)#1.1.1.1.1.1.1.1.1c.1.1.1.1.1,1.1/1.1
     import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -48,6 +48,7 @@ function Cylinder(props){
 }
 
 function App(){
+    const existsByMdlLoader=(MdlLoader mdlLoader)=>{if(mdlLoader!==null)getMdlLoader(mdlLoader);else getMdlLoader(null);}
     const manager= new LoadingManager();
     const setManager=(manager)=>{this.manager=manager;}
     const getManager=(manager)=>{return manager;}//Fetching Manager
@@ -60,6 +61,8 @@ function App(){
     // mdlLoader.add(scoreSnd);
 
   const [count, setCount] = useState(0)
+  const existsByGeometry=(geometry)=>{
+      if(geometry!==null)getgeometry(geometry);else getgeometry(null);}//Checking Geometry's Existence in App
   const updateByGeometry=(geometry)=>{getgeometry(boxGeometry)+setBoxGeometry(boxGeometry)+1;}//Updating Geometry in App
    const getScale=(scale)=>{return scale;}
    const setScale=(scale)=>{this.scale=scale;}//Binding Scale in Chair
