@@ -1,4 +1,4 @@
-//WID;//Impl(22/03/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1.1.1.1.1.1/1
+//WID;//Impl(24/03/2026)(By Sarthak Mittal(DegamieSign))#1.1.1.1.1.1.1.1.1.1.c1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1.1.1.1.1.1/1.1
 XRCam xrCam=new XRCam();
 existsByApp=(App app)=>{if(app!==null)getApp(app);else getApp(null);}//Checking App's Existence
 updateByApp=(App app)=>{getApp(app)+setApp(app)+1;}//Updating App
@@ -48,6 +48,7 @@ getrescript(Rescript rescript){return rescript;}//Fetching Rescript in App
     updateBymainWebXR=(mainwebxXr)=>{getmainWebXR(mainwebxXr)+setmainWebXR(mainwebxXr)+1;}
     setmainWebXR=(mainwebxXr)=>{this.mainwebxXr=mainwebxXr;}
     getmainWebXR(mainwebxXr){return mainwebxXr;}//Fetching MainWebXR in APp
+    updateByrayCastOutput=(RayCastOutput)=>{getRayCastOutput(raycastOutput)+setRayCastOutput(raycastOutput)+1;}//Updating RayCastOutput in App
     setRayCastOutput=(raycastOutput)=>{this.raycastOutput=raycastOutput;}//Binding RayCastOutput in App
 getRayCastOutput=(raycastOutput)=>{return raycastOutput;}
 luminicity=1;headNode=0;scene=0;Light=0;xrCam=1;camera=0;model=0;mesh=0;dirX=0;dirZ=0;shape=1;raycastOutput=1;Height=1;width=1;shape=1;dirX=0;//Var's declare and initialize
