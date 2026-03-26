@@ -1,3 +1,4 @@
+//WID(26/03/2026)(Sarthak Mittal)(DegamieSign)#1
 import * as BABYLON from "@babylonjs/core";
 
 class WebXRManager {
@@ -19,6 +20,7 @@ class WebXRManager {
     }
 
     // --- Getters & Setters ---
+    getluminicity(luminicity){return luminicity;}
     getScene() { return this.scene; }
     setScene(scene) { this.scene = scene; }
 
@@ -27,6 +29,15 @@ class WebXRManager {
 
     // --- Existence Checks & Updates ---
     // Replaces the "get + set + 1" logic with valid state updates
+    //Scene's Update
+      updateByScene(scene) {
+            if (scene) {
+                this.setscene(scene);
+                console.log("scene Updated");
+             return true;
+            }
+            return false;
+        }
     updateByXRCamera(xrCam) {
         if (xrCam) {
             this.setxrCam(xrCam);

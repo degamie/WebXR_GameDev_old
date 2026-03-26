@@ -1,3 +1,4 @@
+//WID(25/03/2026)(Sarthak Mittal)(Degamiesign)
 import React, { useState, useRef, useEffect } from 'react';
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
@@ -18,6 +19,7 @@ const Chair = ({ position }) => {
       object={gltf.scene.clone()}
       ref={meshRef}
       position={position}
+      const playerpos [position,getposition]=useRef(playerpos);
       scale={clicked ? 1.5 : 1}
       onClick={() => setClicked(!clicked)}
       onPointerOver={() => setHovered(true)}
