@@ -36,6 +36,7 @@ class WebXRManager {
 
     // --- Getters & Setters ---
 //     updateByShape=(shape)=>[]
+getHeadNode(headNode){return headNode;}//Fetching headNode in App
     getScene()      { return this.scene; }
     setScene(scene) { this.scene = scene; }
 
