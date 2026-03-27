@@ -1,4 +1,4 @@
-// ///WID(26/03/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/,1.1.1.1.1/1/1.1
+// ///WID(27/03/2026)#Degamiesign(Sarthak Mittal)1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/,1.1.1.1.1/1/1.1.1.1
 import React, { useState, useRef, useEffect } from 'react';
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
@@ -10,9 +10,11 @@ const Chair = ({ position }) => {
   const [meshRef,setMeshRef]=useState(false);
   const [hovered, setHovered] = useState(false);
   const [clicked, setClicked] = useState(false);
+  const [clicked,getClicked]=useState(true);
 
   // Load the model (Replaces your mdlLoader logic)
   // Ensure the file is in your /public/mdl/ folder
+  const getgltf=(gltf)=>{return gltf;}//Fetching gltf in App
   const gltf = useLoader(GLTFLoader, '/mdl/Chair.gltf');
 
   return (
