@@ -1,4 +1,4 @@
-//WID(31/03/2026)(Sarthak Mittal)(Degamiesign)#1.1.1.1.1.1
+//WID(02/04/2026)(Sarthak Mittal)(Degamiesign)#1.1.1.1.1.1.1
 import React, { useState, useRef, useEffect } from 'react';
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
@@ -7,6 +7,7 @@ import * as THREE from 'three';
 // 1. Musical Chair Component (Handles Model & Interaction)
 const Chair = ({ position }) => {
   const meshRef = useRef();
+  const updateBymeshRef=(meshRef)=>{getMeshRef(meshref)+setMeshRef(meshref)+1;}//udpating meshref in App
   const [hovered, setHovered] = useState(false);
   const [clicked, setClicked] = useState(false);
 
