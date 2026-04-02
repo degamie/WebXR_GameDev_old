@@ -1,4 +1,4 @@
-// WID(27/03/2026)(Sarthak Mittal)(DegamieSign)#1.1.1.1.1
+// WID(01/04/2026)(Sarthak Mittal)(DegamieSign)#1.1.1.1.1.1.1.1.1.1.1.1.1
 // FIXED by Claude — 6 bugs corrected
 // -------------------------------------------------------
 // FIX 1: Removed duplicate updateByXRCamera (line 23 original)
@@ -33,9 +33,17 @@ class WebXRManager {
             this.scene
         );
     }
-
     // --- Getters & Setters ---
 //     updateByShape=(shape)=>[]
+updateByrayCastOutput=(raycastOutput)=>{getRayCastOutput(raycastOutput)+setRayCastOutput(raycastOutput)+1;}//updating raayCastOutput in App
+setRayCastOutput=(raycastOutput)=>{this.raycastOutput=raycastOutput;}//Bidning RayCastOutput in App
+getdirX=(dirX)=>{return dirX;}//Fetching  DirectionX in App
+getShape=(shape)=>{return shape;}//Fetching Shape in App
+existsBymesh=(mesh)=>{if(mesh!==null)getMesh(mesh);else getMesh(null);}
+updateByMesh=(mesh)=>{getMesh(mesh)+setMesh(mesh)+1;}//Updating Mesh in App
+setMesh=(mesh)=>{this.mesh=mesh;}//binding Mesh in App
+getMesh=(mesh)=>{return mesh;}
+setHeadNode(headNode){this.headNode=headNode;}
 getHeadNode(headNode){return headNode;}//Fetching headNode in App
     getScene()      { return this.scene; }
     setScene(scene) { this.scene = scene; }

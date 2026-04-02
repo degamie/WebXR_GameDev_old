@@ -1,4 +1,4 @@
-//WID(25/03/2026)(Sarthak Mittal)(Degamiesign)
+//WID(31/03/2026)(Sarthak Mittal)(Degamiesign)#1.1.1.1.1.1
 import React, { useState, useRef, useEffect } from 'react';
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
@@ -13,6 +13,13 @@ const Chair = ({ position }) => {
   // Load the model (Replaces your mdlLoader logic)
   // Ensure the file is in your /public/mdl/ folder
   const gltf = useLoader(GLTFLoader, '/mdl/Chair.gltf');
+  const setgltf=(gltf)=>{this.gltf=gltf;}//binding gltf in App
+   const getgltf(gltf){return gltf;}//Fethcing Gltf in App
+   const updateBygltf=(gltf)=>{getgltf(gltf)+setgltf(gltf)+1;}//Updating gltf in App
+   const existsBygltf=(gltf)=>{
+       if(gltf!==null)getgltf(gltf);
+       else getgltf(null);
+       }
 
   return (
     <primitive
@@ -49,6 +56,7 @@ const RotatingStage = (props) => {
 function App() {
   const [score, setScore] = useState(0);
   const audioRef = useRef();
+  const setaudioref=(audioref)=>{this.audioref=audioref;}
 
   // Audio Logic
   const playScoreSound = () => {
