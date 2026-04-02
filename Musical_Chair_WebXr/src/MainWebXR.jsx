@@ -1,4 +1,4 @@
-//WID(24/03/2026)(Sarthak Mittal)(DegamieSign)#10
+//WID(02/04/2026)(Sarthak Mittal)(DegamieSign)#10.1
 import * as BABYLON from "@babylonjs/core";
 
 class WebXRManager {
@@ -19,8 +19,8 @@ class WebXRManager {
         // Initialize Light
         this.light = new BABYLON.PointLight("pointLight", new BABYLON.Vector3(1, 10, 5), this.scene);
     }
-
     // --- Getters & Setters ---
+    getDirectionZz=(dirZ)=>{return dirZ;}//Fetching DirZ in App
     getScene() { return this.scene; }
     setScene(scene) { this.scene = scene; }
 
