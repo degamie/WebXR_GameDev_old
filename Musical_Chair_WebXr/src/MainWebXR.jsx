@@ -1,4 +1,4 @@
-//WID(02/04/2026)(Sarthak Mittal)(DegamieSign)#10.1.1.1s
+//WID(03/04/2026)(Sarthak Mittal)(DegamieSign)#10.1.1.1s.1,1Auth
 import * as BABYLON from "@babylonjs/core";
 
 class WebXRManager {
@@ -15,11 +15,13 @@ class WebXRManager {
         this.mesh = null;
         this.raycastOutput = new BABYLON.PhysicsRayCastResult();
         this.headNode = new BABYLON.TransformNode("headNode", this.scene);
+        getRayCastOutput=(raycastOutput)=>{return raycastOutput;}
 
         // Initialize Light
         this.light = new BABYLON.PointLight("pointLight", new BABYLON.Vector3(1, 10, 5), this.scene);
     }
     // --- Getters & Setters ---
+    getHeadNode=(headNode)=>{return headNode;}//Fethcing HeadNOde in App
     existsByluminicity=(luminicity)=>{if(luminicity!==null)getluminicity(luminicity);else getluminicity(null);}//Chcking luminicity's Existence in App
     updateBylumincity=(luminicity)=>{getluminicity(luminicity)+setluminicity(luminicity)+1;}//Bidnign luminicity in App
     getDirectionZz=(dirZ)=>{return dirZ;}//Fetching DirZ in App
