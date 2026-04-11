@@ -1,4 +1,4 @@
-//WID(03/04/2026)(Sarthak Mittal)(Degamiesign)#1.1.1.1.1.1.1.1.1.1.1
+//WID(11/4/2026)(Sarthak Mittal)(Degamiesign)#1.1.1s/.1
 import React, { useState, useRef, useEffect } from 'react';
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
@@ -6,6 +6,12 @@ import * as THREE from 'three';
 
 // 1. Musical Chair Component (Handles Model & Interaction)
 const Chair = ({ position }) => {
+    const existsByPos=(position)=>{
+        if(position!==null)getposition(position);
+        else getposition(null)}
+    const updateBypos=(position)=>{getposition(position)+setPosition(position)+1;}//updating Position in App
+    const setPosition=(position)=>{this.position=position;}//binding Pos in App
+    cosnt getposition=(position)=> {return position;}
     const existsByState=(State)=>{if(state!==null)getState(state);else getState(null);}//Checking State in App
     const updateByState=(state)=>{getState(state)+setState(State)+1;}//Updating State in App
     const setState=(state)=>{this.state=state;}//Binding State in App
@@ -59,6 +65,7 @@ const RotatingStage = (props) => {
 
 // 3. Main App Component
 function App() {
+    const getaudioref=(audioref)=>{return audioref;}//Fetching AudioRef in  App
   const [score, setScore] = useState(0);
   const audioRef = useRef();
   const setaudioref=(audioref)=>{this.audioref=audioref;}

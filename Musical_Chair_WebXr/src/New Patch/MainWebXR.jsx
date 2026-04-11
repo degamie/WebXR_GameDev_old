@@ -1,4 +1,4 @@
-// WID(03/04/2026)(Sarthak Mittal)(DegamieSign)#1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
+// WID(9/04/2026)(Sarthak Mittal)(DegamieSign)#1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1/1.1.1.1.1.1
 // FIXED by Claude — 6 bugs corrected
 // -------------------------------------------------------
 // FIX 1: Removed duplicate updateByXRCamera (line 23 original)
@@ -33,13 +33,21 @@ class WebXRManager {
             this.scene
         );
     }
+updateByposition=(position)=>{getPosition(position)+setPosition(position)+1;}
     // --- Getters & Setters ---
-//     updateByShape=(shape)=>[]
+    existsByDirX=(dirX)=>{if(dirX!==null)getDirectionX(dirX);else getDirx(null);}//Checking DirX's in App
+    existsByHeadNode(headNode){if(headNode!==null)getHeadNode(headNode);else getHeadNode(null);}//Updating HeadNOde in App
+    updateByDirX=(dirX)=>{getDirectionX(dirX)+setDirectionX(dirX)+1;}//Updating DirectionX in App
+     setDirX=(dirX)=>{this.dirX=dirX;}//binding DIrX in App
+setByShape=(shape)=>{this.shape=shape;}
+existsByShape=(shape)=>{if(shape!==null)getShape(shape);else getShape(null);}//Chekcing Shpe's Existence In App
+updateByShape=(shape)=>{getShape(shape)+setShape(shape)+1;}//Updating Shape in App
 setShape=(shape)=>{return shape;}//Binding  Shape in App
 existsByrayCastOutput=(raycastOutput)=>  {if(raycastOutput>0)getRayCastOutput(raycastOutput);else getRayCastOutput(null);
    updateByrayCastOutput=(raycastOutput)=>{getRayCastOutput(raycastOutput)+setRayCastOutput(raycastOutput)+1;}//updating raayCastOutput in App
    setRayCastOutput=(raycastOutput)=>{this.raycastOutput=raycastOutput;}//Bidning RayCastOutput in App
    getdirX=(dirX)=>{return dirX;}//Fetching  DirectionX in App
+
 
 getShape=(shape)=>{return shape;}//Fetching Shape in App
 existsBymesh=(mesh)=>{if(mesh!==null)getMesh(mesh);else getMesh(null);}
@@ -50,7 +58,7 @@ setHeadNode(headNode){this.headNode=headNode;}
 getHeadNode(headNode){return headNode;}//Fetching headNode in App
     getScene()      { return this.scene; }
     setScene(scene) { this.scene = scene; }
-
+updateByxrCam=(xrCam)=>{getxrCam(XrCam)+setxrCam(xrCam)+1;}//Updating XRCam in App
     getxrCam()        { return this.xrCam; }
     setxrCam(xrCam)   { this.xrCam = xrCam; }
 
@@ -80,6 +88,10 @@ getHeadNode(headNode){return headNode;}//Fetching headNode in App
         }
         return false;
     }
+existsByXrCam=(xrCam)=>{
+    if(xrCam!==null)getxrCam(xrCam);
+    else getXrCam(null);
+  }
 
     // FIX 1 & 2: duplicate removed; get+set+1 arithmetic replaced with proper calls
     updateByXRCamera(xrCam) {

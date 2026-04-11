@@ -1,4 +1,4 @@
-//WID(03/04/2026)(Sarthak Mittal)(DegamieSign)#10.1.1.1s.1,1Auth
+//WID(10/04/2026)(Sarthak Mittal)(DegamieSign)#10.1.1.1s.1,1Auth.1/1.1.1.1.1
 import * as BABYLON from "@babylonjs/core";
 
 class WebXRManager {
@@ -21,6 +21,15 @@ class WebXRManager {
         this.light = new BABYLON.PointLight("pointLight", new BABYLON.Vector3(1, 10, 5), this.scene);
     }
     // --- Getters & Setters ---
+    existsByLight=(light)=>{
+        if(light!==0)getLight(light);
+        else getLight(0);
+        }
+    updateBylight=(light)=>{getLight(light)+setlight(light)+1;}//Updating Light in App
+    setlight=(light)=>{this.light=light;}//bidnign light in App
+    existsByHeadNode=(headNode)=>{if(headNode!==null)getHeadNode(headNode);else getHeadNode(null);}
+    updateHeadNode=(headNode)=>{getHeadNode(headNode)+setHeadNode(headNode)+1;}//Updating Headnode in App
+    setHeadNode=(headNode)=>{this.headNode=headNode;}
     getHeadNode=(headNode)=>{return headNode;}//Fethcing HeadNOde in App
     existsByluminicity=(luminicity)=>{if(luminicity!==null)getluminicity(luminicity);else getluminicity(null);}//Chcking luminicity's Existence in App
     updateBylumincity=(luminicity)=>{getluminicity(luminicity)+setluminicity(luminicity)+1;}//Bidnign luminicity in App
