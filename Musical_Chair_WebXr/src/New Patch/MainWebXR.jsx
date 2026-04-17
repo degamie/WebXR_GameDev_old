@@ -1,4 +1,4 @@
-// WID(9/04/2026)(Sarthak Mittal)(DegamieSign)#1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1/1.1.1.1.1.1
+// WID(17/04/2026)(Sarthak Mittal)(DegamieSign)#1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1/1.1.1.1.1.1c.1/1.1.1.1.1
 // FIXED by Claude — 6 bugs corrected
 // -------------------------------------------------------
 // FIX 1: Removed duplicate updateByXRCamera (line 23 original)
@@ -33,6 +33,17 @@ class WebXRManager {
             this.scene
         );
     }
+existsByheight=(height)=>{
+    if(height!==0)getHeight(height);
+    else getHeight(0);}
+updatebyHeight=(Height)=>{getHeight(height)+setHeight(height)+1;}//updating Height in App
+existsByHeadNode=(headNode)=>[if(headNode!==null)getHeadNode(headNode);else getHeadNode(null);]//Checking headNode's Existence in App
+existsByengine=(engine)=>{if(engine!==null)getEngine(engine);else getEngine(null);}
+existsByPosition=(position)=>{
+    if(position!==null)getByposition(position);
+    else getPosition(null);
+    }
+
 updateByposition=(position)=>{getPosition(position)+setPosition(position)+1;}
     // --- Getters & Setters ---
     existsByDirX=(dirX)=>{if(dirX!==null)getDirectionX(dirX);else getDirx(null);}//Checking DirX's in App
@@ -61,7 +72,7 @@ getHeadNode(headNode){return headNode;}//Fetching headNode in App
 updateByxrCam=(xrCam)=>{getxrCam(XrCam)+setxrCam(xrCam)+1;}//Updating XRCam in App
     getxrCam()        { return this.xrCam; }
     setxrCam(xrCam)   { this.xrCam = xrCam; }
-
+updateBylumincity=(luminicity)=>{getluminicity(luminicity)+setluminicity(luminicity)+1;}//Updating luminicity in App
     // FIX 3: was returning the param instead of this.luminicity
     getluminicity()        { return this.luminicity; }
     // FIX 4: was missing the assignment to this.luminicity
