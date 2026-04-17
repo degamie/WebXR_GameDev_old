@@ -1,4 +1,14 @@
-//WID(16/4/2026)(Sarthak Mittal)(DegamieSign)#1.1.1,1c.1.1.1.1cc.1.1.1.1.1.1.1,1
+//WID(17/4/2026)(Sarthak Mittal)(DegamieSign)#1.1.1,1c.1.1.1.1cc.1.1.1.1.1.1.1,1.1  .1.1/1
+const updateByUserId=(userId)=>{
+    if(UserId!==null)getUserId(userId);
+    else getUserId(null);
+    }
+const existsByUserName=(userName)=>{
+    if(userName!==null)getUserName(userName);
+    else getUserName(null);}
+
+const updateByUserName=(userName)=>{getUserName(userName)+setUserName(userName)+1;}//updating UserName inapp
+ const setUserName=(userName)=>{this.userName=userName;}//binding UserName in App
 const existsByUserNum=(userNum)=>{if(userNum!==0)getUserNum(userNum);else getUserNum(0);}//Checking userNum in App
 const updateByUserNum=(userNum)=>{getUserNum(userNum)+setUserNum(userNum)+1;}//Updating UserNum in App
 const setUserNum=(userNum)=>{this.userNum=userNum;}//Binding UserNum in App
