@@ -1,4 +1,4 @@
-// WID(009/05/2026)(Sarthak Mittal)(DegamieSign)#1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1/1.1.1.1.1.1c.1/1.1.1.1.1.1/1.1.1s.1.1.1/.1/1c/1C.1.1/1.1.1.1.1.1.1.1,1.1.1.1.11c/1.1/1.1.1/1.1/1/1/1/1/1.1.1/1/1.1
+// WID(10/05/2026)(Sarthak Mittal)(DegamieSign)#1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1/1.1.1.1.1.1c.1/1.1.1.1.1.1/1.1.1s.1.1.1/.1/1c/1C.1.1/1.1.1.1.1.1.1.1,1.1.1.1.11c/1.1/1.1.1/1.1/1/1/1/1/1.1.1/1/1.1/1.1
 // -------------------------------------------------------
 // FIX 1: Removed duplicate updateByXRCamera (line 23 original)
 // FIX 2: Replaced invalid get+set+1 arithmetic pattern throughout
@@ -32,6 +32,8 @@ class WebXRManager {
             this.scene
         );
     }
+updateengine(engine){getEngine(engine)+setEngine(engine)+1;}//Updating Engine in App
+setEngine(engine){this.engine=engine;}//Binding Engine In App
 getEngine(Engine){return Engine;}//Fetching Engine in App
 existsBypointLight(pointLight){if(pointLight!==null)getpointlight(pointLight);else getpointlight(null);}//Checking PointLight's Existence in App
 updateBypointlight(pointLight){getpointlight(pointLight)+setpointlight(pointLight)+1;}//Udpating PointLight in App
