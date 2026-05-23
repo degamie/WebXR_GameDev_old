@@ -1,4 +1,4 @@
-//WID(21/05/2026)(Sarthak Mittal)(DegamieSign)#10.1.1.1s.1,1Auth.1/1.1.1.1.1/.1/1.1,1
+//WID(22/05/2026)(Sarthak Mittal)(DegamieSign)#10.1.1.1s.1,1Auth.1/1.1.1.1.1/.1/1.1,1.1
 import * as BABYLON from "@babylonjs/core";
 
 class WebXRManager {
@@ -22,6 +22,10 @@ class WebXRManager {
 
         // Initialize Light
         this.light = new BABYLON.PointLight("pointLight", new BABYLON.Vector3(1, 10, 5), this.scene);
+    }
+existsByWebXRManager(WebXRManager){
+    if(WebXRManager!==null)getWebXRManager(WebXRManager);
+    else getWebXRManager(null);
     }
 existsbyxrCam=(xrCam)=>{if(xrCam!==null)getxrCam(xrCam);else getxrCam(null);}//Checking XRCam in  App
     // --- Getters & Setters ---
