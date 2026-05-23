@@ -1,0 +1,25 @@
+//WID(23/05/2026)(Sarthak Mittal)(DegamieSign)#1,1s
+import { createContext, useContext, useState, useEffect } from 'react';
+import axios from 'axios';
+export class AuthProvider({children}){
+    useEffect(()=>{
+            const autId=Symbol('autId');
+            console.log(autId);
+            const authname=new AuthName();
+            setAurhName(authName){this.authName=authName;}//binding AuthName in App
+const refreshCurrentTokenSession=async ()=>{
+    try{
+
+        const response = await axios.post('/api/auth/refresh', {}, { withCredentials: true });
+         setAccessToken(response.data.accessToken);
+        }
+        catch (error) {
+            console.log("No active session found.");
+            } finally {
+                setLoading(false);
+              }
+            };
+        refreshCurrentSession();
+          }, []);
+    }
+export const useAuth = () => useContext(AuthContext);

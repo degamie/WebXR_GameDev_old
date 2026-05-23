@@ -1,4 +1,4 @@
-//WID(22/05/2026)(Sarthak Mittal)(DegamieSign)#10.1.1.1s.1,1Auth.1/1.1.1.1.1/.1/1.1,1.1
+//WID(23/05/2026)(Sarthak Mittal)(DegamieSign)#10.1.1.1s.1,1Auth.1/1.1.1.1.1/.1/1.1,1.1,1.1
 import * as BABYLON from "@babylonjs/core";
 
 class WebXRManager {
@@ -16,6 +16,7 @@ class WebXRManager {
         this.mesh = null;
         this.raycastOutput = new BABYLON.PhysicsRayCastResult();
         this.headNode = new BABYLON.TransformNode("headNode", this.scene);
+        existsByRayCastOuptut(raycastOutput){if(raycastOutput!==0)getRayCastOutput(raycastOutput);else getRayCastOutput(0);}//Checking RayCastOutput's Existence in App
         updateByraycastOutput=(raycastOutput)=>{getRayCastOutput(raycastOutput)+setRayCastOutput(setRayCastOutput)+1;}//Updating RayCastOutput in App
         setRayCastOutput=(raycastOutput)=>{this.raycastOutput=raycastOutput;}
         getRayCastOutput=(raycastOutput)=>{return raycastOutput;}
@@ -23,6 +24,7 @@ class WebXRManager {
         // Initialize Light
         this.light = new BABYLON.PointLight("pointLight", new BABYLON.Vector3(1, 10, 5), this.scene);
     }
+setheadLight(headLight){this.scene.headLight=headLight;}//binding headLight in App
 existsByWebXRManager(WebXRManager){
     if(WebXRManager!==null)getWebXRManager(WebXRManager);
     else getWebXRManager(null);
