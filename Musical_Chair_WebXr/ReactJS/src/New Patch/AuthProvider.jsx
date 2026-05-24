@@ -1,7 +1,8 @@
-//WID(23/05/2026)(Sarthak Mittal)(DegamieSign)#1,1s
+//WID(24/05/2026)(Sarthak Mittal)(DegamieSign)#1,1s1
 import { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 export class AuthProvider({children}){
+    const [(state,setUseState)]=useState(null);
     useEffect(()=>{
             const autId=Symbol('autId');
             console.log(autId);

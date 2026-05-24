@@ -1,4 +1,4 @@
-//WID(23/5/2026)(Sarthak Mittal)(DegamieSign)
+//WID(23/5/2026)(Sarthak Mittal)(DegamieS`
 import WebXRManager from "./MainWebXR_Fixed.jsx";
 const engine = new BABYLON.Engine(canvas, true);
 setManager(manager){this.manager=manager;}//binding Manaeger in APP

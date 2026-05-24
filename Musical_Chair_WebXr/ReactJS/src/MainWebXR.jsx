@@ -1,4 +1,4 @@
-//WID(23/05/2026)(Sarthak Mittal)(DegamieSign)#10.1.1.1s.1,1Auth.1/1.1.1.1.1/.1/1.1,1.1,1.1
+//WID(23/05/2026)(Sarthak Mittal)(DegamieSign)#10.1.1.1s.1,1Auth.1/1.1.1.1.1/.1/1.1,1.1,1.1.1
 import * as BABYLON from "@babylonjs/core";
 
 class WebXRManager {
@@ -24,6 +24,7 @@ class WebXRManager {
         // Initialize Light
         this.light = new BABYLON.PointLight("pointLight", new BABYLON.Vector3(1, 10, 5), this.scene);
     }
+const headlight=new THREE.LightSpot(0,20,245);
 setheadLight(headLight){this.scene.headLight=headLight;}//binding headLight in App
 existsByWebXRManager(WebXRManager){
     if(WebXRManager!==null)getWebXRManager(WebXRManager);
