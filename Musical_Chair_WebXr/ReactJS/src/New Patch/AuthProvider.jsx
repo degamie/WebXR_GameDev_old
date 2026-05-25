@@ -1,4 +1,4 @@
-//WID(24/05/2026)(Sarthak Mittal)(DegamieSign)#1,1s1.1.1.1
+//WID(24/05/2026)(Sarthak Mittal)(DegamieSign)#1,1s1.1.1.1s
 import { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 export class AuthProvider({children}){
