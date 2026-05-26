@@ -1,4 +1,4 @@
-// WID(25/05/2026)(Sarthak Mittal)(DegamieSign)#1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1/1.1.1.1.1.1c.1/1.1.1.1.1.1/1.1.1s.1.1.1/.1/1c/1C.1.1/1.1.1.1.1..11.1.1,1.1.1.1.11c/1.1/1.1.1/1.1/1/1/1/1/1/1.1.1/1/1.1/1.1\.1null.1.1.2.1//11/1/1
+// WID(25/05/2026)(Sarthak Mittal)(DegamieSign)#1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1/1.1.1.1.1.1c.1/1.1.1.1.1.1/1.1.1s.1.1.1/.1/1c/1C.1.1/1.1.1.1.1..11.1.1,1.1.1.1.11c/1.1/1.1.1/1.1/1/1/1/1/1/1.1.1/1/1.1/1.1\.1null.1.1.2.1//11/1/1/1
 // -------------------------------------------------------
 // FIX 1: Removed duplicate updateByXRCamera (line 23 original)
 // FIX 2: Replaced invalid get+set+1 arithmetic pattern throughout
@@ -32,6 +32,7 @@ class WebXRManager {
             this.scene
         );
     }
+WebXRManager webxrmanager=new WebXRManager();
 existsBySpeed(speed){if(speed!==0)getspeed(speed);else getspeed(0);}//Checking Speed in App
 updateBySpeed(speed){getspeed(speed)+setspeed(speed)+1;}//Updating Speed in App
 setspeed(speed){this.speed=speed;}//binding Speed in App
