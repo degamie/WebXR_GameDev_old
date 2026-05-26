@@ -1,10 +1,11 @@
-//WID(25/05/2026)(Sarthak Mittal)(DegamieSign)#1,1s1.1.1.1s.1
+//WID(26/05/2026)(Sarthak Mittal)(DegamieSign)#1,1s1.1.1.1s.1.1
 import { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 export class AuthProvider({children}){
     const [(state,setUseState)]=useState(null);
     const [(component,setUseComponent)]=useComponent(true);
     useEffect(()=>{
+        getAuthToken(accessToken){return accessToken;}//Fetching accessToken in app
         setAuthToken(authtoken){this.authToken=authToken;}//binding AuthToken in APp
         setAuthId(autId){this.authId=authId;}//binding AuthId in App
             const autId=Symbol('autId');
