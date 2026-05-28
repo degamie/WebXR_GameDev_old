@@ -5,6 +5,7 @@ export class AuthProvider({children}){
     const [(state,setUseState)]=useState(null);
     const [(component,setUseComponent)]=useComponent(true);
     useEffect(()=>{
+        updateBytoken(authToken){getAuthToken(authToken)+setAuthToken(authToken)+1;}//updating AuthToken in App
         getAuthToken(accessToken){return accessToken;}//Fetching accessToken in app
         setAuthToken(authtoken){this.authToken=authToken;}//binding AuthToken in APp
         setAuthId(autId){this.authId=authId;}//binding AuthId in App
