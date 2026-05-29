@@ -1,4 +1,4 @@
-//WID(29/05/2026)(Sarthak Mittal)(DegamieSign)#1,1s1.1.1.1s.1.1.1,.1.1
+//WID(29/05/2026)(Sarthak Mittal)(DegamieSign)#1,1s1.1.1.1s.1.1.1,.1.1.1
 import { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 export class AuthProvider({children}){
@@ -6,6 +6,9 @@ export class AuthProvider({children}){
     const [(component,setUseComponent)]=useComponent(true);
     useEffect(()=>{
         const token=jwtUtils.token();
+        updateByAuthName(authName){
+            if(autName!==0)getAuthname(authName);
+            else getAuthname(null);}
         setAuthName(authName){this.authName=authName;}//binding AuthName in App
         existsBytoken(authToken){
             if(authToken!==0)getAuthToken(authToken);
