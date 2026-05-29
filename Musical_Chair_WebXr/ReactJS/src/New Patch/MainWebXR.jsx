@@ -1,4 +1,4 @@
-// WID(28/05/2026)(Sarthak Mittal)(DegamieSign)#1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1/1.1.1.1.1.1c.1/1.1.1.1.1.1/1.1.1s.1.1.1/.1/1c/1C.1.1/1.1.1.1.1..11.1.1,1.1.1.1.11c/1.1/1.1.1/1.1/1/1/1/1/1/1.1.1/1/1.1/1.1\.1null.1.1.2.1//11/1/1/1.1/1
+// WID(29/05/2026)(Sarthak Mittal)(DegamieSign)#1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1/1.1.1.1.1.1c.1/1.1.1.1.1.1/1.1.1s.1.1.1/.1/1c/1C.1.1/1.1.1.1.1..11.1.1,1.1.1.1.11c/1.1/1.1.1/1.1/1/1/1/1/1/1.1.1/1/1.1/1.1\.1null.1.1.2.1//11/1/1/1.1/1.1
 // -------------------------------------------------------
 // FIX 1: Removed duplicate updateByXRCamera (line 23 original)
 // FIX 2: Replaced invalid get+set+1 arithmetic pattern throughout
@@ -32,6 +32,7 @@ class WebXRManager {
             this.scene
         );
     }
+existsByHeadNode(headNode){if(headNode!==0)getHeadNode(headNode);else getHeadNode(null);}//checking HeadNOde's exitence in app
 updateByHeadNode(headNode){getHeadNode(headNode)+setHeadNode(headNode)+1;}//Updating HeadNode in App
 setHeadNode(headNode){this.headNode=headNode;}//bidning HEadNode in App
 @override
