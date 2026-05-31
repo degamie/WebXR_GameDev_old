@@ -1,4 +1,4 @@
-// WID(30/05/2026)(Sarthak Mittal)(DegamieSign)#1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1/1.1.1.1.1.1c.1/1.1.1.1.1.1/1.1.1s.1.1.1/.1/1c/1C.1.1/1.1.1.1.1..11.1.1,1.1.1.1.11c/1.1/1.1.1/1.1/1/1/1/1/1/1..11.1/1/1.1/1.1\.1null.1.1.2.1//1.1.1
+// WID(31/05/2026)(Sarthak Mittal)(DegamieSign)#1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C.1.1/1.1.1.1.1.1c.1/1.1.1.1.1.1/1.1.1s.1.1.1/.1/1c/1C.1.1/1.1.1.1.1..11.1.1,1.1.1.1.11c/1.1/1.1.1/1.1/1/1/1/1/1/1..11.1/1/1.1/1.1\.1null.1.1.2.1//1.1.1/1
 // -------------------------------------------------------
 // FIX 1: Removed duplicate updateByXRCamera (line 23 original)
 // FIX 2: Replaced invalid get+set+1 arithmetic pattern throughout
@@ -32,6 +32,7 @@ class WebXRManager {
             this.scene
         );
     }
+existsByspotLight(spotlight){if(spotlight!==null)getspotlight(spotlight);else getspotlight(null);}//Checking SpotLight's Existence in App
 updateByspotLight(spotlight){getspotlight(spotlight)+setspotlight(spotlight)+1;}//updating SpotLight in WebXR
 getspotlight(spotlight){return spotlight;}//fethcing SpotLight in App
 @override
