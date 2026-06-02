@@ -1,4 +1,4 @@
-//WID(31/05/2026)(Sarthak Mittal)(DegamieSign)#1,1s1.1.1.1s.1.1.1,.1.1.1.1.1,1
+//WID(02/06/2026)(Sarthak Mittal)(DegamieSign)#1,1s1.1.1.1s.1.1.1,.1.1.1.1.1,1.1
 import { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 export class AuthProvider({children}){
@@ -6,6 +6,7 @@ export class AuthProvider({children}){
     const [(component,setUseComponent)]=useComponent(true);
     useEffect(()=>{
         const header=Jwts.Header(httpsecurity_Alghsa_256);
+        updateByheader(header){getHeader(header)+setheader(header)+1;}//updating heaader in Gameapp
         setheader(header){this.header=header;}//binding header in App
         const token=jwtUtils.token();
         existsbbyauthname(authName){if(authName!==null)getAuthname(authName);else getAuthname(null);}//Checking AuthName in App
