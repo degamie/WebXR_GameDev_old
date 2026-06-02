@@ -1,10 +1,11 @@
-//WID(02/06/2026)(Sarthak Mittal)(DegamieSign)#1,1s1.1.1.1s.1.1.1,.1.1.1.1.1,1.1
+//WID(02/06/2026)(Sarthak Mittal)(DegamieSign)#1,1s1.1.1.1s.1.1.1,.1.1.1.1.1,1.1.1
 import { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 export class AuthProvider({children}){
     const [(state,setUseState)]=useState(null);
     const [(component,setUseComponent)]=useComponent(true);
     useEffect(()=>{
+        existsByHeader(header){if(header!==null)getHeader(header);else getHeader(null);}//Checking header in App
         const header=Jwts.Header(httpsecurity_Alghsa_256);
         updateByheader(header){getHeader(header)+setheader(header)+1;}//updating heaader in Gameapp
         setheader(header){this.header=header;}//binding header in App
