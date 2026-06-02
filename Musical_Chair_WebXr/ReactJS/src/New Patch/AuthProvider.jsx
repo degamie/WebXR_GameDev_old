@@ -1,4 +1,4 @@
-//WID(02/06/2026)(Sarthak Mittal)(DegamieSign)#1,1s1.1.1.1s.1.1.1,.1.1.1.1.1,1.1.1
+//WID(02/06/2026)(Sarthak Mittal)(DegamieSign)#1,1s1.1.1.1s.1.1.1,.1.1.1.1.1,1.1.1.1
 import { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 export class AuthProvider({children}){
@@ -29,6 +29,7 @@ export class AuthProvider({children}){
             setAurhName(authName){this.authName=authName;}//binding AuthName in App
 const refreshCurrentTokenSession=async ()=>{
     try{
+        getresponse(response){return respone;}//Fetching Repsonse in Game App
         setresponse(respone){this.respone=respone;}//binding Respons in App
 
         const response = await axios.post('/api/auth/refresh', {}, { withCredentials: true });

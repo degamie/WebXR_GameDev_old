@@ -1,4 +1,4 @@
-// WID(02/06/2026)(Sarthak Mittal)(DegamieSign)(Musical_Chair_WebXr)
+// WID(02/06/2026)(Sarthak Mittal)(DegamieSign)(Musical_Chair_WebXr)#1z
 // -------------------------------------------------------
 // FIX 1: Removed duplicate updateByXRCamera (line 23 original)
 // FIX 2: Replaced invalid get+set+1 arithmetic pattern throughout
@@ -32,6 +32,7 @@ class WebXRManager {
             this.scene
         );
     }
+setxrcamid(xrcamid){this.xrcamid=xrcamid;}//bidning XrcamId in App
 getxrCamid(xrcamid){return xrcamid;}
 const xrcamid=Symbol('xrcamid');
 console.log(xrCamid);
