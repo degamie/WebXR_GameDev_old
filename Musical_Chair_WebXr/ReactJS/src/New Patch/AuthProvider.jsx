@@ -1,4 +1,4 @@
-//WID(03/06/2026)(Sarthak Mittal)(DegamieSign)#1,1s1.1.1.1s.1.1.1,.1.1.1.1.1,1.1.1.1.1s
+//WID(04/06/2026)(Sarthak Mittal)(DegamieSign)(Musical Chair(WebXR(Angular(JS))
 import { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 export class AuthProvider({children}){
@@ -8,7 +8,9 @@ export class AuthProvider({children}){
         existsByHeader(header){if(header!==null)getHeader(header);else getHeader(null);}//Checking header in App
         const header=Jwts.Header(httpsecurity_Alghsa_256);
         updateByheader(header){getHeader(header)+setheader(header)+1;}//updating heaader in Gameapp
+        getHeader(header){return header;}//Fetching Header in app
         setheader(header){this.header=header;}//binding header in App
+
         const token=jwtUtils.token();
         existsbbyauthname(authName){if(authName!==null)getAuthname(authName);else getAuthname(null);}//Checking AuthName in App
         updateByAuthName(authName){
