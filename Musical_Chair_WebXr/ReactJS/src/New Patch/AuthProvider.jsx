@@ -1,9 +1,10 @@
-//WID(04/06/2026)(Sarthak Mittal)(DegamieSign)(Musical Chair(WebXR(Angular(JS))
+//WID(06/06/2026)(Sarthak Mittal)(DegamieSign)(Musical Chair(WebXR(Angular(JS))#1
 import { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 export class AuthProvider({children}){
     const [(state,setUseState)]=useState(null);
     const [(component,setUseComponent)]=useComponent(true);
+    tokenid=null;
     useEffect(()=>{
         existsByHeader(header){if(header!==null)getHeader(header);else getHeader(null);}//Checking header in App
         const header=Jwts.Header(httpsecurity_Alghsa_256);
